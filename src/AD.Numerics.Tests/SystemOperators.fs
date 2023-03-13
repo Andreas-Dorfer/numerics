@@ -23,3 +23,9 @@ let ltInt (a: int, b) = a < b
 let ltFloat (a: float, b) = a < b
 
 let ltDecimal (a: decimal, b) = a < b
+
+let lteInt (a: int, b) = a <= b
+
+let lteFloat (a: float, b) = a <= b
+
+let lteDecimal (a: decimal, b) = a <= b

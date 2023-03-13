@@ -43,3 +43,12 @@ type OperatorsTests () =
 
     [<Property>]
     member _.LtDecimal (a, b) = a < b =! ltDecimal (a, b)
+
+    [<Property>]
+    member _.LteInt (a, b) = a <= b =! lteInt (a, b)
+
+    [<Property>]
+    member _.LteFloat (a, b) = a <= b =! lteFloat (a, b)
+
+    [<Property>]
+    member _.LteDecimal (a, b) = a <= b =! lteDecimal (a, b)
