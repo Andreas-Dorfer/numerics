@@ -1,4 +1,4 @@
-﻿module AD.Numerics.Tests.CheckedSystemOperators
+﻿module AD.Numerics.Tests.SystemChecked
 
 open Operators.Checked
 

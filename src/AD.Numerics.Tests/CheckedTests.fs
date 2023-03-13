@@ -2,7 +2,7 @@
 
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open AD.FsCheck.MSTest
-open CheckedSystemOperators
+open SystemChecked
 open AD.Numerics.Checked
 
 [<TestClass>]

@@ -10,8 +10,9 @@
   <ItemGroup>
     <Compile Include="Arbitraries.fs" />
     <Compile Include="TestOperators.fs" />
+    <Compile Include="SystemMath.fs" />
     <Compile Include="SystemOperators.fs" />
-    <Compile Include="ChekedSystemOperators.fs" />
+    <Compile Include="SystemChecked.fs" />
     <Compile Include="MathTests.fs" />
     <Compile Include="OperatorsTests.fs" />
     <Compile Include="CheckedTests.fs" />
