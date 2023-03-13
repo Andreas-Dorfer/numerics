@@ -1,9 +1,9 @@
 ﻿namespace AD.Numerics.Tests
 
+type Digits = private Digits of int
+
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open FsCheck
-
-type Digits = private Digits of int        
 
 [<TestClass>]
 type Arbitraries () =
@@ -12,8 +12,7 @@ type Arbitraries () =
         gen {
             let! digits = (0, 10) |> Gen.choose
             return Digits digits
-        }
-        |> Arb.fromGen
+        } |> Arb.fromGen
 
     [<AssemblyInitialize>]
     static member Initialize(_: TestContext) =
