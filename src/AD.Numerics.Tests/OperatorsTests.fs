@@ -34,3 +34,12 @@ type OperatorsTests () =
 
     [<Property>]
     member _.GteDecimal (a, b) = a >= b =! gteDecimal (a, b)
+
+    [<Property>]
+    member _.LtInt (a, b) = a < b =! ltInt (a, b)
+
+    [<Property>]
+    member _.LtFloat (a, b) = a < b =! ltFloat (a, b)
+
+    [<Property>]
+    member _.LtDecimal (a, b) = a < b =! ltDecimal (a, b)

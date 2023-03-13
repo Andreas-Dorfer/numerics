@@ -17,3 +17,9 @@ let gteInt (a: int, b) = a >= b
 let gteFloat (a: float, b) = a >= b
 
 let gteDecimal (a: decimal, b) = a >= b
+
+let ltInt (a: int, b) = a < b
+
+let ltFloat (a: float, b) = a < b
+
+let ltDecimal (a: decimal, b) = a < b
