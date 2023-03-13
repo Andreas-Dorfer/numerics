@@ -8,7 +8,7 @@ open FsCheck
 [<TestClass>]
 type Arbitraries () =
 
-    static member DigitsArbitrary () =
+    static member DigitsArb () =
         gen {
             let! digits = (0, 10) |> Gen.choose
             return Digits digits
