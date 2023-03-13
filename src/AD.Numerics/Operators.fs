@@ -10,3 +10,4 @@ let inline (+) (a: 'a when 'a :> IAdditionOperators<'a, 'b, 'c>) (b: 'b) : 'c = 
 
 (* IComparisonOperators *)
 let inline (>) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(>)(a, b)
+let inline (>=) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(>=)(a, b)
