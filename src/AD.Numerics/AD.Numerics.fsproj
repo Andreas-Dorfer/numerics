@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Compile Include="Math.fs" />
+    <Compile Include="Operators.fs" />
   </ItemGroup>
 
 </Project>
