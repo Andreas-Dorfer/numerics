@@ -1,4 +1,5 @@
-﻿module AD.Numerics.Checked
+﻿[<AutoOpen>]
+module AD.Numerics.Checked.Operators
 
 open System.Numerics
 

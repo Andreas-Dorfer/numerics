@@ -2,21 +2,21 @@ namespace AD.Numerics.Tests
 
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open AD.FsCheck.MSTest
+open TestOperators
 open SystemMath
-open SystemOperators
 open AD.Numerics
 
 [<TestClass>]
 type MathTests () =
 
-    [<Property>]
-    member _.AddIdInt a = addInt (a, addId) =! a
+    [<TestMethod>]
+    member _.AddIdInt () = addId =! 0
 
-    [<Property>]
-    member _.AddIdFloat a = addFloat (a, addId) =! a
+    [<TestMethod>]
+    member _.AddIdFloat () = addId =! 0.0
 
-    [<Property>]
-    member _.AddIdDecimal a = addDecimal (a, addId) =! a
+    [<TestMethod>]
+    member _.AddIdDecimal () = addId =! 0m
 
     [<Property>]
     member _.RoundFloat (mode, (Digits digits), a) = round mode digits a =! roundFloat (a, digits, mode)

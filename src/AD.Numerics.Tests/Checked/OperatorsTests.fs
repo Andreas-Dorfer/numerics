@@ -1,8 +1,9 @@
-﻿namespace AD.Numerics.Tests
+﻿namespace AD.Numerics.Tests.Checked
 
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open AD.FsCheck.MSTest
-open SystemChecked
+open AD.Numerics.Tests.TestOperators
+open SystemOperators
 open AD.Numerics.Checked
 
 [<TestClass>]

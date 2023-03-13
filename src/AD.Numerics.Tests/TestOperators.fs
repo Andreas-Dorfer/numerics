@@ -1,5 +1,4 @@
-﻿[<AutoOpen>]
-module AD.Numerics.Tests.TestOperators
+﻿module AD.Numerics.Tests.TestOperators
 
 open type Microsoft.VisualStudio.TestTools.UnitTesting.Assert
 
