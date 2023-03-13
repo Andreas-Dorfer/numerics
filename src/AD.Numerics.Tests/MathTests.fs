@@ -13,6 +13,12 @@ type MathTests () =
     member _.AddIdInt a = addInt (a, addId) =! a
 
     [<Property>]
+    member _.AddIdFloat a = addFloat (a, addId) =! a
+
+    [<Property>]
+    member _.AddIdDecimal a = addDecimal (a, addId) =! a
+
+    [<Property>]
     member _.RoundFloat (mode, (Digits digits), a: float) = round mode digits a =! Round(a, digits, mode)
     
     [<Property>]
