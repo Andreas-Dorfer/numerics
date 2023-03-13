@@ -16,3 +16,12 @@ type OperatorsTests () =
 
     [<Property>]
     member _.AddDecimal (a, b) = a + b =! addDecimal (a, b)
+
+    [<Property>]
+    member _.GtInt (a, b) = a > b =! gtInt (a, b)
+
+    [<Property>]
+    member _.GtFloat (a, b) = a > b =! gtFloat (a, b)
+
+    [<Property>]
+    member _.GtDecimal (a, b) = a > b =! gtDecimal (a, b)
