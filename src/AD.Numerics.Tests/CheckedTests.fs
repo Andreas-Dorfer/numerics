@@ -8,10 +8,6 @@ open AD.Numerics.Checked
 [<TestClass>]
 type CheckedTests () =
 
-    let assertAdd a b expected =
-        let actual = a + b
-        actual =! expected
-
     [<Property>]
     member _.AddInt (a, b) = a + b =! addInt (a, b)
 

@@ -8,10 +8,6 @@ open AD.Numerics
 [<TestClass>]
 type OperatorsTests () =
 
-    let assertAdd a b expected =
-        let actual = a + b
-        actual =! expected
-
     [<Property>]
     member _.AddInt (a, b) = a + b =! addInt (a, b)
 
