@@ -1,4 +1,6 @@
-﻿module AD.Numerics.Tests.SystemOperators
+﻿module AD.Numerics.Tests.CheckedSystemOperators
+
+open Operators.Checked
 
 let inline addInt (a, b) = a + b
 

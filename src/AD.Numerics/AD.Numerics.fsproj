@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="Math.fs" />
     <Compile Include="Operators.fs" />
+    <Compile Include="Checked.fs" />
   </ItemGroup>
 
 </Project>

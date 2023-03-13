@@ -2,11 +2,11 @@
 
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open AD.FsCheck.MSTest
-open SystemOperators
-open AD.Numerics
+open CheckedSystemOperators
+open AD.Numerics.Checked
 
 [<TestClass>]
-type OperatorsTests () =
+type CheckedTests () =
 
     let assertAdd a b expected =
         let actual = a + b
