@@ -7,7 +7,7 @@ open SystemOperators
 open AD.Numerics.Checked
 
 [<TestClass>]
-type CheckedTests () =
+type OperatorsTests () =
 
     [<Property>]
     member _.AddInt (a, b) = a + b =! addInt (a, b)
