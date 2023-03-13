@@ -2,8 +2,8 @@
 
 open Operators.Checked
 
-let inline addInt (a, b) = a + b
+let addInt (a: int, b) = a + b
 
-let inline addFloat (a: float, b) = a + b
+let addFloat (a: float, b) = a + b
 
-let inline addDecimal (a: decimal, b) = a + b
+let addDecimal (a: decimal, b) = a + b

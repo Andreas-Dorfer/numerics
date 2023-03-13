@@ -13,10 +13,10 @@ type CheckedTests () =
         actual =! expected
 
     [<Property>]
-    member _.AddInt (a, b) = addInt (a, b) |> assertAdd a b
+    member _.AddInt (a, b) = a + b =! addInt (a, b)
 
     [<Property>]
-    member _.AddFloat (a, b) = addFloat (a, b) |> assertAdd a b
+    member _.AddFloat (a, b) = a + b =! addFloat (a, b)
 
     [<Property>]
-    member _.AddDecimal (a, b) = addDecimal (a, b) |> assertAdd a b
+    member _.AddDecimal (a, b) = a + b =! addDecimal (a, b)
