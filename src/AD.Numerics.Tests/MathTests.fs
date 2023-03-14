@@ -19,10 +19,10 @@ type MathTests () =
     member _.AddIdDecimal () = addId =! 0m
 
     [<Property>]
-    member _.RoundFloat (mode, (Digits digits), a) = round mode digits a =! roundFloat (a, digits, mode)
+    member _.RoundFloat (mode, (Digits digits), a) = round (a, digits, mode) =! roundFloat (a, digits, mode)
     
     [<Property>]
-    member _.RoundDecimal (mode, (Digits digits), a) = round mode digits a =! roundDecimal (a, digits, mode)
+    member _.RoundDecimal (mode, (Digits digits), a) = round (a, digits, mode) =! roundDecimal (a, digits, mode)
 
     [<Property>]
     member _.DecrInt a = decr a =! decrInt a
