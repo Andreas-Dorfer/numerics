@@ -35,3 +35,15 @@ let divInt (a: int, b) = a / b
 let divFloat (a: float, b) = a / b
 
 let divDecimal (a: decimal, b) = a / b
+
+let eqInt (a: int, b) = a = b
+
+let eqFloat (a: float, b) = a = b
+
+let eqDecimal (a: decimal, b) = a = b
+
+let notEqInt (a: int, b) = a <> b
+
+let notEqFloat (a: float, b) = a <> b
+
+let notEqDecimal (a: decimal, b) = a <> b

@@ -16,3 +16,7 @@ let inline (<=) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c
 
 (* IDivisionOperators *)
 let inline (/) (a: 'a when 'a :> IDivisionOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(/)(a, b)
+
+(* IEqualityOperators *)
+let inline (=) (a: 'a when 'a :> IEqualityOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(=)(a, b)
+let inline (<>) (a: 'a when 'a :> IEqualityOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(<>)(a, b)

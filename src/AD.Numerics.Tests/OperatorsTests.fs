@@ -2,6 +2,7 @@
 
 open Microsoft.VisualStudio.TestTools.UnitTesting
 open AD.FsCheck.MSTest
+open System
 open TestOperators
 open SystemOperators
 open AD.Numerics
@@ -55,10 +56,38 @@ type OperatorsTests () =
     member _.LteDecimal (a, b) = a <= b =! lteDecimal (a, b)
 
     [<Property>]
-    member _.DivInt (a, b) = a / b =! divInt (a, b)
+    member _.DivInt (a, b) =
+        let div () = a /b =! divInt (a, b)
+        if b = 0 then
+            Assert.ThrowsException<DivideByZeroException> div |> ignore
+        else
+            div ()
 
     [<Property>]
     member _.DivFloat (a, b) = a / b =! divFloat (a, b)
 
     [<Property>]
-    member _.DivDecimal (a, b) = a / b =! divDecimal (a, b)
+    member _.DivDecimal (a, b) =
+        let div () = a /b =! divDecimal (a, b)
+        if b = 0m then
+            Assert.ThrowsException<DivideByZeroException> div |> ignore
+        else
+            div ()
+
+    [<Property>]
+    member _.EqInt (a, b) = a = b =! eqInt (a, b)
+
+    [<Property>]
+    member _.EqFloat (a, b) = a = b =! eqFloat (a, b)
+
+    [<Property>]
+    member _.EqDecimal (a, b) = a = b =! eqDecimal (a, b)
+
+    [<Property>]
+    member _.NotEqInt (a, b) = a <> b =! notEqInt (a, b)
+
+    [<Property>]
+    member _.NotEqFloat (a, b) = a <> b =! notEqFloat (a, b)
+
+    [<Property>]
+    member _.NotEqDecimal (a, b) = a <> b =! notEqDecimal (a, b)
