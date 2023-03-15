@@ -29,3 +29,9 @@ let lteInt (a: int, b) = a <= b
 let lteFloat (a: float, b) = a <= b
 
 let lteDecimal (a: decimal, b) = a <= b
+
+let divInt (a: int, b) = a / b
+
+let divFloat (a: float, b) = a / b
+
+let divDecimal (a: decimal, b) = a / b

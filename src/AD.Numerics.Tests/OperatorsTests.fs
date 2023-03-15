@@ -53,3 +53,12 @@ type OperatorsTests () =
 
     [<Property>]
     member _.LteDecimal (a, b) = a <= b =! lteDecimal (a, b)
+
+    [<Property>]
+    member _.DivInt (a, b) = a / b =! divInt (a, b)
+
+    [<Property>]
+    member _.DivFloat (a, b) = a / b =! divFloat (a, b)
+
+    [<Property>]
+    member _.DivDecimal (a, b) = a / b =! divDecimal (a, b)

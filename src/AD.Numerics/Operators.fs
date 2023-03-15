@@ -13,3 +13,6 @@ let inline (>) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c 
 let inline (>=) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(>=)(a, b)
 let inline (<) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(<)(a, b)
 let inline (<=) (a: 'a when 'a :> IComparisonOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(<=)(a, b)
+
+(* IDivisionOperators *)
+let inline (/) (a: 'a when 'a :> IDivisionOperators<'a, 'b, 'c>) (b: 'b) : 'c = 'a.(/)(a, b)

@@ -17,3 +17,12 @@ type OperatorsTests () =
 
     [<Property>]
     member _.AddDecimal (a, b) = a + b =! addDecimal (a, b)
+
+    [<Property>]
+    member _.DivInt (a, b) = a / b =! divInt (a, b)
+
+    [<Property>]
+    member _.DivFloat (a, b) = a / b =! divFloat (a, b)
+
+    [<Property>]
+    member _.DivDecimal (a, b) = a / b =! divDecimal (a, b)
